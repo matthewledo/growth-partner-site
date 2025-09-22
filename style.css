@@ -115,7 +115,7 @@ ul {
   gap: 1rem;
 }
 .flex-100 {
-  flex-basis: 100;
+  flex-basis: 100%;
 }
 
 /* --- TEXT --- */

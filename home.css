@@ -15,7 +15,7 @@
     text-align: center;
     padding: 2rem;
 } */
- .hero {
+ /* .hero {
     height: 90vh;
     background: linear-gradient(120deg, #0066ff, #00cc99);
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(48, 48, 48, 1) 78%);
@@ -23,6 +23,13 @@
     color: #fff;
     text-align: center;
     padding: 2rem;
+} */
+ .hero {
+    height: 90vh;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    background: #0f172a;
 }
 .hero h2 {
   font-size: 2.5rem;
@@ -59,10 +66,52 @@ h1.brand-title span {
     letter-spacing: normal;
     display: block;
 }
-.gradient-text {
+/* .gradient-text {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     background-image: linear-gradient(0deg, #1e3a5f 35%, #7bae7f);
+} */
+.gradient-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-image: linear-gradient(90deg, #ff6a00, #ee0979);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #0072ff;
+    color: #fff;
+    border-radius: 4px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    border: 1px solid #fff;
+    font-weight: 600;
+    color: #fff;
+    /* background: #DCF763; */
+}
+
+a.btn:hover {
+    background: #ff6a00;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(238, 9, 121, 0.3);
+}
+
+@media (max-width: 768px) {
+h1.brand-title {
+    font-size: clamp(18px, 15vw, 190px);
+    line-height: 1;
+    text-align: left;
+    letter-spacing: 0px;
+    filter: drop-shadow(1px 2px 1px #fff);
+}
+.hero {
+    padding: 30px 15px;
+    justify-content: center;
+    align-items: baseline;
+}
 }
