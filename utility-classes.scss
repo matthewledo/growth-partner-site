@@ -1,5 +1,5 @@
 // ======= Margin =======
-@for $i from 0 through 200 {
+@for $i from 0 through 50 {
   .m-#{$i} { margin: #{$i}px; }
    .mtb-#{$i} { margin-top: #{$i}px; margin-bottom: #{$i}px; }
    .mlr-#{$i} { margin-left: #{$i}px; margin-right: #{$i}px; }
@@ -12,7 +12,7 @@
 .lr-auto { margin-left: auto; margin-right: auto; }
 
 // ======= Padding =======
-@for $i from 0 through 200 {
+@for $i from 0 through 50 {
   .p-#{$i} { padding: #{$i}px; }
   .ptb-#{$i} { padding-top: #{$i}px; padding-bottom: #{$i}px; }
     .plr-#{$i} { padding-left: #{$i}px; padding-right: #{$i}px; }
