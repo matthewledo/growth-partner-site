@@ -39,7 +39,7 @@
 
 // ======= Flex-basis =======
 @for $i from 0 through 100 {
-  .flex-#{$i} { flex: 0 0 #{$i}%; }
+  .flex-#{$i} { flex: 0 0 #{$i + "%"}; }
 }
 
 // ======= Text Alignment =======
