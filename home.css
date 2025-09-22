@@ -79,7 +79,7 @@ h1.brand-title span {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    background-image: linear-gradient(90deg, #ff6a00, #ee0979);
+    background-image: linear-gradient(-190deg, #ff6a00, #ee0979);
 }
 
 .btn {
