@@ -33,7 +33,7 @@
 .h-auto { height: auto; }
 
 // ======= Font Size =======
-@for $i from 1 through 100 {
+@for $i from 1 through 50 {
   .fs-#{$i} { font-size: #{$i}px; }
 }
 
