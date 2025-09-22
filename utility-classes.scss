@@ -1,0 +1,48 @@
+// ======= Margin =======
+@for $i from 0 through 200 {
+  .m-#{$i} { margin: #{$i}px; }
+   .mtb-#{$i} { margin-top: #{$i}px; margin-bottom: #{$i}px; }
+   .mlr-#{$i} { margin-left: #{$i}px; margin-right: #{$i}px; }
+  .mt-#{$i} { margin-top: #{$i}px; }
+  .mr-#{$i} { margin-right: #{$i}px; }
+  .mb-#{$i} { margin-bottom: #{$i}px; }
+  .ml-#{$i} { margin-left: #{$i}px; }
+}
+.m-auto { margin: auto; }
+.lr-auto { margin-left: auto; margin-right: auto; }
+
+// ======= Padding =======
+@for $i from 0 through 200 {
+  .p-#{$i} { padding: #{$i}px; }
+  .ptb-#{$i} { padding-top: #{$i}px; padding-bottom: #{$i}px; }
+    .plr-#{$i} { padding-left: #{$i}px; padding-right: #{$i}px; }
+   .pt-#{$i} { padding-top: #{$i}px; }
+  .pr-#{$i} { padding-right: #{$i}px; }
+  .pb-#{$i} { padding-bottom: #{$i}px; }
+  .pl-#{$i} { padding-left: #{$i}px; }
+}
+
+// ======= Width & Height =======
+@for $i from 0 through 1000 {
+  .w-#{$i} { width: #{$i}px; }
+  .h-#{$i} { height: #{$i}px; }
+}
+.w-100p { width: 100%; }
+.h-100p { height: 100%; }
+.w-auto { width: auto; }
+.h-auto { height: auto; }
+
+// ======= Font Size =======
+@for $i from 1 through 100 {
+  .fs-#{$i} { font-size: #{$i}px; }
+}
+
+// ======= Flex-basis =======
+@for $i from 0 through 100 {
+  .flex-#{$i} { flex: 0 0 #{$i}%; }
+}
+
+// ======= Text Alignment =======
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }

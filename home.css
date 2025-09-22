@@ -1,0 +1,36 @@
+/* ===== Hero ===== */
+.hero {
+  height: 90vh;
+  background: linear-gradient(120deg, #0066ff, #00cc99);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+
+h1.brand-title {
+    font-size: clamp(18px, 14vw, 190px);
+    line-height: 1;
+    text-align: left;
+    letter-spacing: 10px;
+    filter: drop-shadow(2px 4px 1px black);
+}
+h1.brand-title span {
+    font-size: clamp(18px, 10vw, 150px);
+    letter-spacing: normal;
+    display: block;
+}
+.gradient-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-image: linear-gradient(0deg, #1e3a5f 35%, #7bae7f);
+}
