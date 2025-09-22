@@ -2,10 +2,10 @@
 * {
   box-sizing: border-box;
   transition: all 0.3s ease;
-}
-body {
   margin: 0;
   padding: 0;
+}
+body {
   font-family: "Playfair Display", serif;
   line-height: 1.6;
   color: #222;
@@ -19,10 +19,21 @@ ul {
 }
 
 /* --- COLORS / BACKGROUND --- */
-.bg-primary { background-color: #0070f3 !important; color: white !important; }
-.bg-light { background-color: #f9f9f9 !important; }
-.bg-dark { background-color: #222 !important; color: white !important; }
-.bg-hover-primary:hover { background-color: #005ccc !important; color: white !important; }
+.bg-primary {
+  background-color: #0070f3;
+  color: white;
+}
+.bg-light {
+  background-color: #f9f9f9;
+}
+.bg-dark {
+  background-color: #222;
+  color: white;
+}
+.bg-hover-primary:hover {
+  background-color: #005ccc;
+  color: white;
+}
 
 /* ===== Layout Utilities ===== */
 .container {
@@ -54,13 +65,23 @@ ul {
 }
 
 /* --- BORDER / RADIUS --- */
-.rounded { border-radius: 5px !important; }
-.rounded-lg { border-radius: 10px !important; }
+.rounded {
+  border-radius: 5px;
+}
+.rounded-lg {
+  border-radius: 10px;
+}
 
 /* --- WIDTH / HEIGHT --- */
-.w-full { width: 100% !important; }
-.h-full { height: 100% !important; }
-.max-w-500 { max-width: 500px !important; }
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.max-w-500 {
+  max-width: 500px;
+}
 
 /* --- FLEXBOX --- */
 .flex {
@@ -163,7 +184,6 @@ ul {
   padding: 2rem;
 }
 
-
 /* --- BUTTONS --- */
 .btn {
   background-color: #0070f3;
@@ -178,7 +198,7 @@ ul {
 .btn:hover {
   background-color: #005ccc;
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* --- LINKS / HOVER --- */
@@ -195,7 +215,9 @@ ul {
   animation: fadeIn 1s forwards;
 }
 @keyframes fadeIn {
-  to { opacity: 1; }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Slide up */
@@ -210,7 +232,6 @@ ul {
     transform: translateY(0);
   }
 }
-
 
 /* ===== Navbar ===== */
 .navbar {
@@ -288,8 +309,13 @@ ul {
 
 /* --- RESPONSIVE UTILITIES --- */
 @media (max-width: 768px) {
-  .flex-col-sm { flex-direction: column !important; }
-  .text-center-sm { text-align: center !important; }
-  .p-sm-2 { padding: 0.5rem !important; }
+  .flex-col-sm {
+    flex-direction: column;
+  }
+  .text-center-sm {
+    text-align: center;
+  }
+  .p-sm-2 {
+    padding: 0.5rem;
+  }
 }
-
