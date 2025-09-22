@@ -23,10 +23,10 @@
 }
 
 // ======= Width & Height =======
-@for $i from 0 through 1000 {
-  .w-#{$i} { width: #{$i}px; }
-  .h-#{$i} { height: #{$i}px; }
-}
+// @for $i from 0 through 1000 {
+//   .w-#{$i} { width: #{$i}px; }
+//   .h-#{$i} { height: #{$i}px; }
+// }
 .w-100p { width: 100%; }
 .h-100p { height: 100%; }
 .w-auto { width: auto; }
