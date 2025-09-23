@@ -32,28 +32,13 @@
     background: #0f172a;
 }
 .hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+    font-size: clamp(16px, 5vw, 32px);
+    font-weight: 600;
 }
 .hero p {
   margin-bottom: 1.5rem;
 }
 
-
-/* h1.brand-title {
-    font-size: clamp(18px, 14vw, 190px);
-    line-height: 1;
-    text-align: left;
-    letter-spacing: 10px;
-    filter: drop-shadow(2px 4px 1px black);
-} */
- /* h1.brand-title {
-    font-size: clamp(18px, 14vw, 190px);
-    line-height: 1;
-    text-align: left;
-    letter-spacing: 10px;
-    filter: drop-shadow(2px 4px 3px #fff);
-} */
  h1.brand-title {
     font-size: clamp(18px, 14vw, 190px);
     font-weight: 800;
