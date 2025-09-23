@@ -6,6 +6,7 @@
     padding: 2rem;
     background: #0f172a;
     align-items: baseline;
+        gap: 80px 0;
 }
  h1.brand-title {
     font-size: clamp(18px, 14vw, 190px);
