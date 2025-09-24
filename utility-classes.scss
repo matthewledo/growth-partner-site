@@ -1,26 +1,26 @@
 // ======= Margin =======
-// @for $i from 0 through 50 {
-//   .m-#{$i} { margin: #{$i}px; }
-//    .mtb-#{$i} { margin-top: #{$i}px; margin-bottom: #{$i}px; }
-//    .mlr-#{$i} { margin-left: #{$i}px; margin-right: #{$i}px; }
-//   .mt-#{$i} { margin-top: #{$i}px; }
-//   .mr-#{$i} { margin-right: #{$i}px; }
-//   .mb-#{$i} { margin-bottom: #{$i}px; }
-//   .ml-#{$i} { margin-left: #{$i}px; }
-// }
+@for $i from 0 through 50 {
+  .m-#{$i} { margin: #{$i}px; }
+   .mtb-#{$i} { margin-top: #{$i}px; margin-bottom: #{$i}px; }
+   .mlr-#{$i} { margin-left: #{$i}px; margin-right: #{$i}px; }
+  .mt-#{$i} { margin-top: #{$i}px; }
+  .mr-#{$i} { margin-right: #{$i}px; }
+  .mb-#{$i} { margin-bottom: #{$i}px; }
+  .ml-#{$i} { margin-left: #{$i}px; }
+}
 .m-auto { margin: auto; }
 .lr-auto { margin-left: auto; margin-right: auto; }
 
 // ======= Padding =======
-// @for $i from 0 through 50 {
-//   .p-#{$i} { padding: #{$i}px; }
-//   .ptb-#{$i} { padding-top: #{$i}px; padding-bottom: #{$i}px; }
-//     .plr-#{$i} { padding-left: #{$i}px; padding-right: #{$i}px; }
-//    .pt-#{$i} { padding-top: #{$i}px; }
-//   .pr-#{$i} { padding-right: #{$i}px; }
-//   .pb-#{$i} { padding-bottom: #{$i}px; }
-//   .pl-#{$i} { padding-left: #{$i}px; }
-// }
+@for $i from 0 through 50 {
+  .p-#{$i} { padding: #{$i}px; }
+  .ptb-#{$i} { padding-top: #{$i}px; padding-bottom: #{$i}px; }
+    .plr-#{$i} { padding-left: #{$i}px; padding-right: #{$i}px; }
+   .pt-#{$i} { padding-top: #{$i}px; }
+  .pr-#{$i} { padding-right: #{$i}px; }
+  .pb-#{$i} { padding-bottom: #{$i}px; }
+  .pl-#{$i} { padding-left: #{$i}px; }
+}
 
 // ======= Width & Height =======
 // @for $i from 0 through 1000 {
@@ -33,9 +33,9 @@
 .h-auto { height: auto; }
 
 // ======= Font Size =======
-// @for $i from 1 through 50 {
-//   .fs-#{$i} { font-size: #{$i}px; }
-// }
+@for $i from 1 through 50 {
+  .fs-#{$i} { font-size: #{$i}px; }
+}
 
 // ======= Flex-basis =======
 @for $i from 0 through 100 {
