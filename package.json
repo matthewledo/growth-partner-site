@@ -1,6 +1,6 @@
 {
   "name": "Marketing Services Website",
-  "homepage": "https://nextstepmarketing.ca/",
+  "homepage": "https://nextstepmarketing.ca",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
