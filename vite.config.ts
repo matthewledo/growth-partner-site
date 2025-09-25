@@ -6,7 +6,7 @@
 
   export default defineConfig({
     plugins: [react()],
-      base: '/growth-partner-site/',
+      base: '/',
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
