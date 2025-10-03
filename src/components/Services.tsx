@@ -35,34 +35,6 @@ export function Services() {
 
   return (
     <section id="services" className="py-20 bg-gradient-to-b from-white to-secondary/5 relative">
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <motion.div 
-          className="absolute top-20 left-10 w-20 h-20 rounded-full bg-accent/10 blur-xl"
-          animate={{ 
-            scale: [1, 1.5, 1],
-            opacity: [0.3, 0.6, 0.3]
-          }}
-          transition={{ 
-            duration: 4, 
-            repeat: Infinity, 
-            ease: "easeInOut" 
-          }}
-        />
-        <motion.div 
-          className="absolute bottom-20 right-10 w-32 h-32 rounded-full bg-primary/10 blur-xl"
-          animate={{ 
-            scale: [1.5, 1, 1.5],
-            opacity: [0.6, 0.3, 0.6]
-          }}
-          transition={{ 
-            duration: 6, 
-            repeat: Infinity, 
-            ease: "easeInOut",
-            delay: 1
-          }}
-        />
-      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div 
           className="text-center"
@@ -92,12 +64,12 @@ export function Services() {
                 whileHover={{ y: -8, rotateY: 2 }}
                 transition={{ duration: 0.3 }}
               >
-                <Card className="border-2 hover:shadow-2xl hover:border-primary/30 transition-all duration-300 bg-gradient-to-br from-white to-primary/5 h-full">
+                <Card className="border-2 hover:shadow-2xl hover:border-primary/30 transition-all duration-300 bg-gradient-to-br from-white bg-secondary-5 h-full">
                   <CardHeader>
                     <div className="flex items-center">
                       <div className="flex-shrink-0">
                         <motion.div 
-                          className="p-2 rounded-lg bg-gradient-to-br from-primary to-accent"
+                          className="p-2 rounded-lg gradient-primary-secondary"
                           whileHover={{ rotate: 5, scale: 1.1 }}
                           transition={{ duration: 0.2 }}
                         >
@@ -124,7 +96,7 @@ export function Services() {
                           viewport={{ once: true }}
                         >
                           <motion.span 
-                            className="w-1.5 h-1.5 bg-gradient-to-r from-primary to-accent rounded-full mr-3"
+                            className="w-1.5 h-1.5 gradient-primary-secondary rounded-full mr-3"
                             whileHover={{ scale: 1.5 }}
                             transition={{ duration: 0.2 }}
                           />

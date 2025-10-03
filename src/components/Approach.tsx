@@ -94,7 +94,7 @@ export function Approach() {
                 >
                   <div className="flex-shrink-0 mr-4">
                     <motion.div 
-                      className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent text-white text-lg shadow-lg"
+                      className="flex items-center justify-center w-12 h-12 rounded-full gradient-primary-secondary text-white text-lg shadow-lg"
                       whileHover={{ scale: 1.1, rotate: 5 }}
                       transition={{ type: "spring", stiffness: 300 }}
                     >

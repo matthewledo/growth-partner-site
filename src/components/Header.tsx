@@ -12,7 +12,7 @@ export function Header() {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Next Step Marketing</h1>
+              <h1 className="text-2xl font-bold gradient-primary-secondary bg-clip-text text-transparent" style={{ backgroundClip: "text" }}>Next Step Marketing</h1>
               <p className="text-sm text-muted-foreground">Your Next Step to Real, Lasting Growth</p>
             </motion.div>
           </div>
@@ -39,15 +39,11 @@ export function Header() {
           </nav>
 
           <div className="hidden md:block">
-            <motion.div
-              whileHover={{ scale: 1.05, y: -1 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            >
-              <Button className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="ml-4 flex items-center md:ml-6">
+              <Button className="badge gradient-primary-secondary shadow-lg hover:shadow-xl transition-all duration-300">
                 Get Started
               </Button>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

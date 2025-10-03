@@ -8,7 +8,7 @@ export function CTA() {
   const ctaAnimation = useScrollAnimation(0);
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-primary via-accent to-primary text-white relative overflow-hidden">
+    <section id="contact" className="py-20 gradient-CTA text-white relative overflow-hidden">
       {/* Animated background patterns */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
