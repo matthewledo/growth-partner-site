@@ -1,0 +1,289 @@
+/* rulesheet.css */
+
+/* ==========================================================================
+   1. General Layout & Structure
+   ========================================================================== */
+
+/*  Use these classes to control the overall layout of your components. */
+
+.max-w-7xl {
+  /*  Sets a maximum width for the content, creating a consistent container size.
+      Adjust the "7xl" value as needed for different screen sizes. */
+  max-width: var(--container-7xl); /*  Referencing the variable from index.css */
+}
+
+.mx-auto {
+  /*  Horizontally centers the content within its container. */
+  margin-inline: auto;
+}
+
+.px-4 {
+  /*  Applies horizontal padding (left and right).
+      Adjust the "4" value as needed for different padding sizes. */
+  padding-inline: calc(var(--spacing) * 4); /*  Referencing the variable from index.css */
+}
+
+.sm\:px-6 {
+  /*  Applies horizontal padding on small screens and above. */
+  padding-inline: calc(var(--spacing) * 6); /*  Referencing the variable from index.css */
+}
+
+.lg\:px-8 {
+  /*  Applies horizontal padding on large screens and above. */
+  padding-inline: calc(var(--spacing) * 8); /*  Referencing the variable from index.css */
+}
+
+.py-20 {
+  /*  Applies vertical padding (top and bottom).
+      Adjust the "20" value as needed for different padding sizes. */
+  padding-block: calc(var(--spacing) * 20); /*  Referencing the variable from index.css */
+}
+
+.relative {
+  /*  Creates a relative positioning context for child elements. */
+  position: relative;
+}
+
+.absolute {
+  /*  Creates an absolute positioning context for child elements. */
+  position: absolute;
+}
+
+.z-10 {
+  /*  Controls the stacking order of elements. */
+  z-index: 10;
+}
+
+/* ==========================================================================
+   2. Flexbox & Grid Layout
+   ========================================================================== */
+
+/*  Use these classes for flexible and responsive layouts. */
+
+.flex {
+  /*  Enables flexbox layout. */
+  display: flex;
+}
+
+.items-center {
+  /*  Vertically aligns items to the center within a flex container. */
+  align-items: center;
+}
+
+.justify-center {
+  /*  Horizontally aligns items to the center within a flex container. */
+  justify-content: center;
+}
+
+.lg\:grid {
+    display: grid;
+}
+
+.lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lg\:gap-16 {
+    gap: calc(var(--spacing) * 16);
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   3. Spacing (Margins & Padding)
+   ========================================================================== */
+
+/*  Use these classes to control spacing around elements.
+    The values (e.g., mt-8, mb-4) correspond to a spacing scale defined in your CSS (likely based on rem values). */
+
+.mt-8 {
+  /*  Applies a top margin. */
+  margin-top: calc(var(--spacing) * 8); /*  Referencing the variable from index.css */
+}
+
+.mb-6 {
+  /*  Applies a bottom margin. */
+  margin-bottom: calc(var(--spacing) * 6); /*  Referencing the variable from index.css */
+}
+
+.mb-8 {
+  /*  Applies a bottom margin. */
+  margin-bottom: calc(var(--spacing) * 8); /*  Referencing the variable from index.css */
+}
+
+.mr-4 {
+    margin-right: calc(var(--spacing) * 4);
+}
+
+.space-y-8 {
+    /* Applies space between children in a vertical direction */
+}
+
+/* ==========================================================================
+   4. Typography
+   ========================================================================== */
+
+/*  Use these classes to style text elements. */
+
+.text-3xl {
+  /*  Sets the font size for large headings. */
+  font-size: var(--text-3xl); /*  Referencing the variable from index.css */
+  line-height: var(--text-3xl--line-height); /*  Referencing the variable from index.css */
+}
+
+.sm\:text-4xl {
+  /*  Sets the font size for large headings on small screens and above. */
+  font-size: var(--text-4xl); /*  Referencing the variable from index.css */
+  line-height: var(--text-4xl--line-height); /*  Referencing the variable from index.css */
+}
+
+.text-xl {
+  /*  Sets the font size for subheadings or larger body text. */
+  font-size: var(--text-xl); /*  Referencing the variable from index.css */
+  line-height: var(--text-xl--line-height); /*  Referencing the variable from index.css */
+}
+
+.text-lg {
+  /*  Sets the font size for headings or emphasized text. */
+  font-size: var(--text-lg); /*  Referencing the variable from index.css */
+  line-height: var(--text-lg--line-height); /*  Referencing the variable from index.css */
+}
+
+.text-gray-600 {
+  /*  Sets the text color to a specific shade of gray. */
+  color: var(--color-gray-600); /*  Referencing the variable from index.css */
+}
+
+.text-primary {
+  /*  Sets the text color to the primary color. */
+  color: var(--primary); /*  Referencing the variable from globals.css */
+}
+
+/* ==========================================================================
+   5. Background & Color
+   ========================================================================== */
+
+/*  Use these classes to control background colors and gradients. */
+
+.bg-gradient-to-br {
+  /*  Applies a background gradient from top-left to bottom-right. */
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)); /*  Using Tailwind's gradient system */
+}
+
+.from-gray-50 {
+  /*  Sets the starting color of a gradient. */
+  --tw-gradient-from: var(--color-gray-50); /*  Referencing the variable from index.css */
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0)); /*  Defining the gradient stops */
+}
+
+.to-primary\/5 {
+  /*  Sets the ending color of a gradient with opacity. */
+    --tw-gradient-to: var(--primary);
+}
+
+@supports (color: color-mix(in lab, red, red)) {
+    .to-primary\/5 {
+      --tw-gradient-to: color-mix(in oklab, var(--primary) 5%, transparent);
+  }
+}
+
+.from-accent\/20 {
+    --tw-gradient-from: var(--accent);
+}
+
+@supports (color: color-mix(in lab, red, red)) {
+    .from-accent\/20 {
+      --tw-gradient-from: color-mix(in oklab, var(--accent) 20%, transparent);
+  }
+}
+
+.to-accent\/20 {
+    --tw-gradient-to: var(--accent);
+}
+
+@supports (color: color-mix(in lab, red, red)) {
+    .to-accent\/20 {
+      --tw-gradient-to: color-mix(in oklab, var(--accent) 20%, transparent);
+  }
+}
+
+.bg-white {
+  /*  Sets the background color to white. */
+  background-color: var(--color-white); /*  Referencing the variable from index.css */
+}
+
+/* ==========================================================================
+   6. Borders & Rounded Corners
+   ========================================================================== */
+
+/*  Use these classes to style borders and round corners. */
+
+.rounded-lg {
+  /*  Applies a large rounded corner. */
+  border-radius: var(--radius); /*  Referencing the variable from globals.css */
+}
+
+.border {
+  /*  Adds a 1px border to the element. */
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* ==========================================================================
+   7. Shadows
+   ========================================================================== */
+
+.shadow-lg {
+  /*  Applies a larger shadow to the element. */
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+.shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, #0000001a), 0 8px 10px -6px var(--tw-shadow-color, #0000001a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+/* ==========================================================================
+   8. Width & Height
+   ========================================================================== */
+
+.w-full {
+    width: 100%;
+}
+
+.h-6 {
+    height: calc(var(--spacing) * 6);
+}
+
+.w-6 {
+    width: calc(var(--spacing) * 6);
+}
+
+.h-12 {
+    height: calc(var(--spacing) * 12);
+}
+
+.w-12 {
+    width: calc(var(--spacing) * 12);
+}
+
+/* ==========================================================================
+   9. Motion & Animation
+   ========================================================================== */
+
+.blur-2xl {
+    --tw-blur: blur(var(--blur-2xl));
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+}
