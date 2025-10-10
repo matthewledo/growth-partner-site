@@ -1,0 +1,262 @@
+/* animations.css */
+
+/* ==========================================================================
+   1. Gradient Orb Animation
+   ========================================================================== */
+
+.gradient-orb-animation-1 {
+  animation: gradient-orb-1-keyframes 6s ease-in-out infinite;
+}
+
+@keyframes gradient-orb-1-keyframes {
+  0% {
+    transform: scale(1) translateX(0) translateY(0); /* translateY is added to ensure consistent behavior */
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.3) translateX(20px) translateY(0); /* translateY is added to ensure consistent behavior */
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1) translateX(0) translateY(0); /* translateY is added to ensure consistent behavior */
+    opacity: 0.4;
+  }
+}
+
+.gradient-orb-animation-2 {
+  animation: gradient-orb-2-keyframes 8s ease-in-out infinite 1s;
+}
+
+@keyframes gradient-orb-2-keyframes {
+  0% {
+    transform: scale(1.3) translateX(0) translateY(0); /* translateY is added to ensure consistent behavior */
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1) translateX(-20px) translateY(0); /* translateY is added to ensure consistent behavior */
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.3) translateX(0) translateY(0); /* translateY is added to ensure consistent behavior */
+    opacity: 0.7;
+  }
+}
+
+/* ==========================================================================
+   2. Step Number Hover Animation
+   ========================================================================== */
+
+.step-number-hover-animation {
+  transition: all 0.3s ease;
+}
+
+.step-number-hover-animation:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* ==========================================================================
+   3. Image Hover Animation
+   ========================================================================== */
+
+.image-hover-animation {
+  transition: all 0.3s ease;
+}
+
+.image-hover-animation:hover {
+  transform: scale(1.02) rotateY(-3deg);
+}
+
+/* ==========================================================================
+   4. List Item Entrance Animation
+   ========================================================================== */
+
+.list-item-entrance-animation {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.list-item-entrance-animation.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ==========================================================================
+   5. List Item Circle Hover Animation
+   ========================================================================== */
+
+.list-item-circle-hover-animation {
+  transition: all 0.2s ease;
+}
+
+.list-item-circle-hover-animation:hover {
+  transform: scale(1.5);
+}
+
+/* ==========================================================================
+   6. Button Hover and Tap Animation
+   ========================================================================== */
+
+.button-hover-tap-animation {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-hover-tap-animation:hover {
+  transform: scale(1.05) translateY(-2px);
+}
+
+.button-hover-tap-animation:active {
+  transform: scale(0.95);
+}
+
+/* ==========================================================================
+   7. Image Entrance Animation
+   ========================================================================== */
+
+.image-entrance-animation {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s;
+}
+
+.image-entrance-animation.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ==========================================================================
+   8. Card Image Hover Animation
+   ========================================================================== */
+
+.card-image-hover-animation {
+  transition: all 0.3s ease;
+}
+
+.card-image-hover-animation:hover {
+  transform: scale(1.02) rotateY(3deg);
+}
+
+/* ==========================================================================
+   9. card-availability-hover-animation
+   ========================================================================== */
+
+.card-availability-hover-animation {
+  transition: all 0.3s ease;
+}
+
+.card-availability-hover-animation:hover {
+    background-color: rgba(252, 211, 77, 0.3);
+}
+
+/* ==========================================================================
+   10. Logo Hover Animation
+   ========================================================================== */
+
+.logo-hover-animation {
+  transition: all 0.2s ease;
+}
+
+.logo-hover-animation:hover {
+  transform: scale(1.02);
+}
+
+/* ==========================================================================
+   11. Navigation Link Hover Animation
+   ========================================================================== */
+
+.nav-link-hover-animation {
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-link-hover-animation:hover {
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   12. Paragraph Entrance Animation
+   ========================================================================== */
+
+.paragraph-entrance-animation {
+  opacity: 0;
+  transition: opacity 0.6s ease 0.8s;
+}
+
+.paragraph-entrance-animation.in-view {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   13. Image container Hover Animation
+   ========================================================================== */
+
+.image-container-hover-animation {
+  transition: all 0.3s ease;
+}
+
+.image-container-hover-animation:hover {
+  transform: scale(1.02) rotateY(5deg);
+}
+
+/* ==========================================================================
+   14. Overlay hover animation
+   ========================================================================== */
+.overlay-hover-animation {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.overlay-hover-animation:hover {
+  opacity: 0.1;
+}
+
+/* ==========================================================================
+   15. Card container hover animation
+   ========================================================================== */
+.card-container-hover-animation {
+  transition: all 0.3s ease;
+}
+
+.card-container-hover-animation:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* ==========================================================================
+   16. Service icon container hover animation
+   ========================================================================== */
+.service-icon-container-hover-animation {
+  transition: all 0.2s ease;
+}
+
+.service-icon-container-hover-animation:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* ==========================================================================
+   17. Feature list item entrance animation
+   ========================================================================== */
+.feature-list-item-entrance-animation {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.feature-list-item-entrance-animation.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ==========================================================================
+   18. Title Entrance Animation
+   ========================================================================== */
+
+.title-entrance-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.title-entrance-animation.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
